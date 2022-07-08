@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --bg-color: black;
+    --text-color: white;
+    --primary-color: gray;
+    --primary-color-dark: rgb(75, 73, 73);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+body.blue {
+    --bg-color: #00051e;
+    --text-color: white;
+    --primary-color: #001993;
+    --primary-color-dark: #00082f;
+}
+
+body.pink {
+    --bg-color: #340012;
+    --text-color: white;
+    --primary-color: #ed4d85;
+    --primary-color-dark: #8f0334;
+
+}
+
+body.green {
+    --bg-color: rgb(0, 21, 0);
+    --text-color: white;
+    --primary-color: rgb(124, 247, 124);
+    --primary-color-dark: rgb(14, 81, 14);
+}
+
+.container {
+    text-shadow: 2px 2px 5px 10px grey;
+    box-shadow: 0px 0px 20px 0px silver, inset 0px 0px 20px 0px white;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+}
+
+h1 {
+    margin: 30px 10px;
+    padding: 10px 10px;
+    font-size: 32px;
+
+}
+
+.UserName {
+    font-family: 'Roboto Mono', monospace;
+    font: 18px;
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+img.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    margin: 15px;
+}
+
+ul li a {
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--primary-color-dark);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background 488ms;
+}
+
+
+ul li a:hover {
+    background-color: var(--primary-color-dark);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 10px 10px 20px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: opacity=400ms;
+}
+
+footer:hover {
+    opacity: 1.0;
+}
+
+footer a {
+    color: black;
+}
